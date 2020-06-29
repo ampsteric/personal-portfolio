@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+p {
+    color: white;
+}
+.heading {
+    width: 100%;
+}
+.nav-wrapper a {
+    font-family: "Bebas Neue", cursive;
+}
+.right a {
+    font-size: 20px;
+}
+.header img {
+    z-index: 10;
+    position: absolute;
+    left: 64%;
+    height: 90%;
+}
+.container p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 50px;
+}
+.proj-heading p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 50px;
+    padding: 5% 15%;
+}
+.heading P {
+    font-family: "Work Sans", sans-serif;
+    font-size: 50px;
+    z-index: 10;
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 12%;
+}
+.edu p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 30px;
+    z-index: 10;
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 5%;
+}
+.edu {
+    width: 100%;
+    top: 150%;
+    position: absolute;
+}
+span {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 90px;
+}
+#canvas-image-blending {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#granim-canvas {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+.nav-wrapper {
+    background-color: rgba(2, 2, 2, 0.87) !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+body {
+    background-color: #0e0e0e;
+}
+
+.navbar-fixed {
+    position: absolute;
+    z-index: 999999999;
+}
+
+#canvas-1 {
+    width: 1000px;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.canvas {
+    height: 100vh;
+    width: 100vh;
+}
+body {
+    overflow-x: hidden;
+}
+
+.ocean {
+    background: #3b21ff;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.wave {
+    background: url(https://venkat369.github.io/development/wave.svg) repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+        swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+@keyframes swell {
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
+.container {
+    margin: 15% 20%;
+}
+.container-fliud {
+    top: 400%;
+    position: absolute;
+}
+
+.card {
+    width: 50%;
+}
+.page-footer {
+    background-color: #3d2dff !important;
+    top: 399%;
+    width: 100%;
+    position: absolute;
+}
+.footer-copyright p {
+    font-size: 10px !important;
+}
+.page-footer p {
+    font-size: 30px !important;
+}
+.thunder-div {
+    height: 100%;
+    position: absolute;
+    top: 220%;
+}
+.proj-heading {
+    position: absolute;
+    top: 230%;
+}
+.projects {
+    position: absolute;
+    top: 280%;
+    margin: 0% 10%;
+}
+.projects img {
+    width: 400px;
+}
+.projects figure {
+    height: 200px;
+    width: 300px;
+}
+@media only screen and (max-width: 800px) {
+    .header {
+        display: none;
+    }
+    .heading {
+        display: none;
+    }
+    .nav-wrapper {
+        display: none;
+    }
+    #granim-canvas {
+        display: none;
+    }
+    .edu {
+        display: none;
+    }
+    .thunder-div {
+        display: none;
+    }
+    .proj-heading {
+        display: none;
+    }
+    .projects {
+        display: none;
+    }
+}
